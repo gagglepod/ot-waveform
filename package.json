@@ -1,0 +1,19 @@
+{
+  "name": "ot-waveform",
+  "version": "1.0.0",
+  "description": "Chapters Waveform UI Experiment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "waveform",
+    "wavesurfer",
+    "chapters"
+  ],
+  "author": "Kyle M. Bondo",
+  "license": "ISC",
+  "dependencies": {
+    "wavesurfer.js": "^6.6.3"
+  }
+}

@@ -1,0 +1,128 @@
+/* @import "./normalize.css"; */
+
+/* ******************************************************************* */
+/* Font Imports */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Source+Sans+Pro:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+/* ******************************************************************* */
+/* Base */
+
+:root {
+  --color-primary: #5eb1bf;
+  --color-primary-alt: #368d9a;
+  --color-bottom: #004956;
+  --color-secondary: #bf6c5e;
+  --color-tertiary: #006a77;
+  --color-accent: #ef7b45;
+  --color-light: #b5dde4;
+  --color-headings: #fffff0;
+  --color-body: #fffff0;
+  --color-background: #2f363a;
+  --color-lt-background: #3a4348;
+  --color-borders: #c1c9ce;
+  --color-dark: #81362c;
+  --color-footer: #002b37;
+  --color-placeholder: #cbcdd7;
+  --border-radius: 5px;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  /* 62.5% of 16px = 10px */
+  font-size: 62.5%;
+}
+
+body {
+  background: var(--color-borders);
+  color: var(--color-body);
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  height: 100%;
+}
+
+/* .container {
+  max-width: 1140px;
+  margin: 0 auto;
+} */
+
+/* ******************************************************************* */
+
+.waveform-box {
+    display: flex;
+    justify-content: center;
+}
+
+.audio-box {
+    width: 600px;
+    background: var(--color-primary-alt);
+    padding: 2rem;
+    border-radius: 2rem;
+}
+
+.audio-container {
+    background: var(--color-primary);
+    box-shadow: 0 .4rem .8rem -0.4rem rgba(0,0,0,0.3);
+    font-family: "Open Sans", sans-serif;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.audio-container .audio {
+  background: #222;
+    width: 100%;
+    height: 13rem;
+    border-radius: 1rem;
+}
+
+.audio-container .track-name {
+    position: relative;
+    top: 0;
+    left: 0;
+    color: #fff;
+    background: var(--color-secondary);
+    padding: 1rem 3rem 1rem 3rem;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    font-size: 1.3rem;
+    width: 54rem;
+}
+
+.audio-container .btn {
+  padding: 1.6rem;
+  width: 2.4rem;
+  margin-right: .8rem;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.audio-container .volume-slider {
+  width: 20rem;
+}
+
+.audio-container .buttons .play-btn .fa-pause {
+  display: none;
+}
+.audio-container .buttons .play-btn.play-btn.playing .fa-pause {
+  display: inline-block;
+}
+.audio-container .buttons .play-btn.playing .fa-play {
+  display: none;
+}
+
+.audio-container .buttons .mute-btn .fa-volume-xmark {
+  display: none;
+}
+.audio-container .buttons .mute-btn.muted .fa-volume-xmark {
+  display: inline-block;
+}
+.audio-container .buttons .mute-btn.muted .fa-volume-high {
+  display: none;
+}
