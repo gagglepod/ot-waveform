@@ -25,6 +25,7 @@ audioTrack.on("ready", function () {
 });
 
 const trackName = (document.getElementById("track").innerHTML = audioFileName);
+
 const playBtn = document.querySelector(".play-btn");
 const stopBtn = document.querySelector(".stop-btn");
 const muteBtn = document.querySelector(".mute-btn");
